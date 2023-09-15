@@ -1,4 +1,4 @@
-# Deploying wordpress on AWS/Azure with RDS using Terraform, and Docker
+# Deploying wordpress on AWS with RDS using Terraform, and Docker
 
 # First install Terraform :
 $ wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
