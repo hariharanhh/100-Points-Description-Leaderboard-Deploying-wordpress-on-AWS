@@ -22,7 +22,7 @@ Create a folder with whatever name you want. Let’s name it Terraform. Inside t
 
 
 
-Then, run the following command to install all of the necessary plugins 
+# Then, run the following command to install all of the necessary plugins 
 
 
 
@@ -41,32 +41,32 @@ $ Terraform apply
  ![Screenshot (69)](https://github.com/hariharanhh/100-Points-Description-Leaderboard-Deploying-wordpress-on-AWS/assets/110392389/0c7262c0-26dc-4b88-9f2a-c0dfb7b0b2fa)
 
 
-After running the $ terraform apply command, it will take some time for the infrastructure to be created. During this time, you can open the AWS Console and see all of the resources being created.
+# After running the $ terraform apply command, it will take some time for the infrastructure to be created. During this time, you can open the AWS Console and see all of the resources being created.
 
 ![WhatsApp Image 2023-09-15 at 16 04 05](https://github.com/hariharanhh/100-Points-Description-Leaderboard-Deploying-wordpress-on-AWS/assets/110392389/5e1e4293-4356-4552-9fd8-4d0693acb036)
 
  
 
-After creating all resources over Terraform. Now, go to the EC2 instance that you have created
+# After creating all resources over Terraform. Now, go to the EC2 instance that you have created
 
  ![WhatsApp Image 2023-09-15 at 16 09 21](https://github.com/hariharanhh/100-Points-Description-Leaderboard-Deploying-wordpress-on-AWS/assets/110392389/72467d60-526d-434a-870e-a9d79d54e874)
 
 
-Once you have successfully SSHed into your EC2 instance, install Docker and Docker Compose
+# Once you have successfully SSHed into your EC2 instance, install Docker and Docker Compose
 
-Commands to build the images:
+# Commands to build the images:
 
 $ docker build -t my-wordpress-image -f /home/ubuntu/wordpress/Dockerfile 
 $ docker build -t my-apache-php-image -f /home/ubuntu/apache-php/Dockerfile
 
-Login to your Docker Hub account using the following command:
+# Login to your Docker Hub account using the following command:
 
 $ docker login
 
-Before pushing the image to Docker Hub, you need to tag it with your Docker Hub username and the desired repository name
+# Before pushing the image to Docker Hub, you need to tag it with your Docker Hub username and the desired repository name
 $ docker tag wordpress:latest hariharan/wordpress:new_version
 
-After tagging the image, push it to Docker Hub using the following command:
+# After tagging the image, push it to Docker Hub using the following command:
 $ docker push hariharan/wordpress:new_version
 
 
@@ -78,30 +78,30 @@ $ docker push hariharan/wordpress:new_version
 
  
 
-Finally, go to your Docker Hub account at and navigate to your repository. You should see the pushed image listed in the repository.
+# Finally, go to your Docker Hub account at and navigate to your repository. You should see the pushed image listed in the repository.
 
  
 ![WhatsApp Image 2023-09-15 at 21 10 56 (1)](https://github.com/hariharanhh/100-Points-Description-Leaderboard-Deploying-wordpress-on-AWS/assets/110392389/0b7b3461-577d-404c-bfea-caa5480c1afe)
 
 
 
-Finally, run the following command to deploy the WordPress stack. Make sure that you are running below command where the docker-compose.yml  file saved.
+# Finally, run the following command to deploy the WordPress stack. Make sure that you are running below command where the docker-compose.yml  file saved.
 
 $ docker-compose up -d
 
-Enter the EC2 public ip
+# Enter the EC2 public ip
 
 
  ![56](https://github.com/hariharanhh/100-Points-Description-Leaderboard-Deploying-wordpress-on-AWS/assets/110392389/3f3cf910-3670-434f-8419-c8f39e8d8247)
 
 
-Click on continue button, it will take you to next step.
+# Click on continue button, it will take you to next step.
 
 
  ![2](https://github.com/hariharanhh/100-Points-Description-Leaderboard-Deploying-wordpress-on-AWS/assets/110392389/4b2419c5-ac1b-4cda-a085-a49cb620b453)
 
 
-Fill the required details and login into it.
+# Fill the required details and login into it.
 
  
 
