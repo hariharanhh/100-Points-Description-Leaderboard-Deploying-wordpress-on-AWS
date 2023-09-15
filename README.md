@@ -43,7 +43,8 @@ $ Terraform apply
 
 # After running the $ terraform apply command, it will take some time for the infrastructure to be created. During this time, you can open the AWS Console and see all of the resources being created.
 
-![WhatsApp Image 2023-09-15 at 16 04 05](https://github.com/hariharanhh/100-Points-Description-Leaderboard-Deploying-wordpress-on-AWS/assets/110392389/5e1e4293-4356-4552-9fd8-4d0693acb036)
+
+![WhatsApp Image 2023-09-15 at 21 28 23](https://github.com/hariharanhh/Deploying-wordpress-on-AWS/assets/110392389/616685af-99a1-4be5-adac-a8352343c8bf)
 
  
 
